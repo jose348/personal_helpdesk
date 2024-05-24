@@ -27,7 +27,7 @@
         }
 
         /* TODO LA RUTA DE MI PROYECTO */
-        public function ruta(){
+        public static function ruta(){
             return "http://localhost/personal_helpdesk/";
         }
     
