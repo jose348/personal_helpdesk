@@ -7,8 +7,10 @@
         public function login(){
             $conectar=parent::Conexion();
             parent::set_names();
-            if(isset($_POST["enviar"])){
+            if(isset($_POST["enviar"])){ // viene delogin
                 $correo=$_POST["usu_correo"];
+                $correo=$_POST["usu_correo"];
+
                 $pass=$_POST["usu_pass"];
                 if(empty($correo) and empty($pass) ){
                     header("Location:".conectar::ruta()."index.php?m=2" );
