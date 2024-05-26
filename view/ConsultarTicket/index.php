@@ -7,6 +7,7 @@
 <html>
 	
     <?php require_once("../MainHead/head.php");?>
+
 	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
 	<title>Fiestas</>::Consultar Ticket</title>
 </head>
@@ -21,45 +22,40 @@
 	<!-- Contenido -->
 	<div class="page-content">
 		<div class="container-fluid">
-			<div class="row">
-				<div class="col-xl-12">
-					<div class="row">
-						<div class="col-sm-4">
-	                        <article class="statistic-box green">
-	                            <div>
-	                                <div class="number" id="lbltotal"></div>
-	                                <div class="caption"><div>Total de Tickets</div></div>
-	                            </div>
-	                        </article>
-	                    </div>
-						<div class="col-sm-4">
-	                        <article class="statistic-box yellow">
-	                            <div>
-	                                <div class="number" id="lbltotalabierto"></div>
-	                                <div class="caption"><div>Total de Tickets Abiertos</div></div>
-	                            </div>
-	                        </article>
-	                    </div>
-						<div class="col-sm-4">
-	                        <article class="statistic-box red">
-	                            <div>
-	                                <div class="number" id="lbltotalcerrado"></div>
-	                                <div class="caption"><div>Total de Tickets Cerrados</div></div>
-	                            </div>
-	                        </article>
-	                    </div>
+			<!-- TODO TITULOS DE -->
+			<header class="section-header">
+					<div class="tbl">
+						<div class="tbl-row">
+							<div class="tbl-cell">
+								<h3>Consultar Ticket</h3>
+								<ol class="breadcrumb breadcrumb-simple">
+
+									<li><a href="../Home/" class="active">Home</a></li>
+
+									<li class="active">consultar Ticket</li>
+								</ol>
+							</div>
+						</div>
 					</div>
-				</div>
+				</header>
+				
+			<div class="box-typical box-typical-padding" id="table">
+			<h5 class="m-t-lg with-border">Tickets Registrados</h5>
+				<table id="ticket_data" class="table table-bordered table-striped table-vcenter js-dataTable-full">
+					<thead>
+						<tr>
+							<th>N° Ticket</th>
+							<th>Categoria</th>
+							<th>Titulo</th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody>
+
+						</tbody>
+				</table>	
 			</div>
 
-			<section class="card">
-				<header class="card-header">
-					Grafico Estadístico
-				</header>
-				<div class="card-block">
-					<div id="divgrafico" style="height: 250px;"></div>
-				</div>
-			</section>
 			
 		</div>
 	</div>

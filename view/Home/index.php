@@ -7,6 +7,7 @@
 <html>
 	
     <?php require_once("../MainHead/head.php");?>
+
 	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
 	<title>Fiestas</>::Home</title>
 </head>
@@ -21,6 +22,22 @@
 	<!-- Contenido -->
 	<div class="page-content">
 		<div class="container-fluid">
+			<!-- TODO TITULOS DE -->
+			<header class="section-header">
+					<div class="tbl">
+						<div class="tbl-row">
+							<div class="tbl-cell">
+								<h3>Principal</h3>
+								<ol class="breadcrumb breadcrumb-simple">
+
+									<li><a href="../Home/" class="active">Home</a></li>
+
+									<li class="active">Ticket</li>
+								</ol>
+							</div>
+						</div>
+					</div>
+				</header>
 			<div class="row">
 				<div class="col-xl-12">
 					<div class="row">

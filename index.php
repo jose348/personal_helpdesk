@@ -1,9 +1,9 @@
 <?php
 
-require_once ("config/conexion.php");
+require_once("config/conexion.php");
 
 if (isset($_POST["enviar"]) and $_POST["enviar"] == "si") {
-    require_once ("models/Usuario.php");
+    require_once("models/Usuario.php");
     $usuario = new Usuario();
     $usuario->login();
 }
@@ -18,7 +18,8 @@ if (isset($_POST["enviar"]) and $_POST["enviar"] == "si") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>sw</></title>
+    <title>sw</>
+    </title>
 
     <link href="img/favicon.144x144.png" rel="apple-touch-icon" type="image/png" sizes="144x144">
     <link href="img/favicon.114x114.png" rel="apple-touch-icon" type="image/png" sizes="114x114">
@@ -53,27 +54,27 @@ if (isset($_POST["enviar"]) and $_POST["enviar"] == "si") {
                     if (isset($_GET["m"])) {
                         switch ($_GET["m"]) {
                             case "1";
-                                ?>
+                    ?>
+                                <div class="alert alert-info alert-icon alert-close alert-dismissible fade in" role="alert">
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                        <span aria-hidden="true">×</span>
+                                    </button> 
+                                    <i class="font-icon font-icon-warning"></i>
+                                    El Usuario y/o Contraseña son incorrectos.
+                                </div>
+                            <?php
+                                break;
+                            case "2";
+                            ?>
                                 <div class="alert alert-info alert-icon alert-close alert-dismissible fade in" role="alert">
                                     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                         <span aria-hidden="true">×</span>
                                     </button>
                                     <i class="font-icon font-icon-warning"></i>
-                                    El Usuario y/o Contraseña son incorrectos.
+                                    Los campos estan vacios.
                                 </div>
-                                <?php
+                    <?php
                                 break;
-                                case "2";
-                                ?>
-                                 <div class="alert alert-info alert-icon alert-close alert-dismissible fade in" role="alert">
-                                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                                <span aria-hidden="true">×</span>
-                                            </button>
-                                            <i class="font-icon font-icon-warning"></i>
-                                            Los campos estan vacios.
-                                 </div>
-                                 <?php
-                                 break;
                         }
                     }
                     ?>
@@ -83,14 +84,10 @@ if (isset($_POST["enviar"]) and $_POST["enviar"] == "si") {
                         <input type="text" id="usu_correo" name="usu_correo" class="form-control" placeholder="Email" />
                     </div>
                     <div class="form-group">
-                        <input type="password" id="usu_pass" name="usu_pass" class="form-control"
-                            placeholder="Password" />
+                        <input type="password" id="usu_pass" name="usu_pass" class="form-control" placeholder="Password" />
                     </div>
                     <div class="form-group">
-                        <div class="checkbox float-left">
-                            <input type="checkbox" id="signed-in" />
-                            <label for="signed-in">Keep me signed in</label>
-                        </div>
+
                         <div class="float-right reset">
                             <a href="reset-password.html">Cambiar Contraseña</a>
                         </div>
@@ -113,13 +110,13 @@ if (isset($_POST["enviar"]) and $_POST["enviar"] == "si") {
     <script src="public/js/plugins.js"></script>
     <script type="text/javascript" src="public/js/lib/match-height/jquery.matchHeight.min.js"></script>
     <script>
-        $(function () {
+        $(function() {
             $('.page-center').matchHeight({
                 target: $('html')
             });
 
-            $(window).resize(function () {
-                setTimeout(function () {
+            $(window).resize(function() {
+                setTimeout(function() {
                     $('.page-center').matchHeight({
                         remove: true
                     });
@@ -131,6 +128,6 @@ if (isset($_POST["enviar"]) and $_POST["enviar"] == "si") {
         });
     </script>
     <script src="public/js/app.js"></script>
-    </bod>
+</body>
 
 </html>

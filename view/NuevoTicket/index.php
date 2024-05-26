@@ -7,6 +7,7 @@ if (isset($_SESSION["usu_id"])) {
 	<html>
 
 	<?php require_once("../MainHead/head.php"); ?>
+
 	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
 	<title>Fiestas</>::Nuevo Ticket</title>
 	</head>
@@ -22,7 +23,7 @@ if (isset($_SESSION["usu_id"])) {
 		<!-- Contenido -->
 		<div class="page-content">
 			<div class="container-fluid">
-
+				<!-- TODO TITULOS DE -->
 				<header class="section-header">
 					<div class="tbl">
 						<div class="tbl-row">
@@ -40,43 +41,41 @@ if (isset($_SESSION["usu_id"])) {
 				</header>
 
 				<div class="box-typical box-typical-padding">
-					<p>
-						
-					</p>
-
-					<h5 class="m-t-lg with-border text text-primary">Genera Nuevo Ticket de HelpDesk</h5>
+					<h5 class="m-t-lg with-border">Registra un Nuevo Ticket</h5>
 					<div class="row">
-					<div class="col-lg-6">
-						<fieldset class="form-group">
-							<label class="form-label semibold" for="exampleInput">Categoria</label>
-							<select  class="form-control" id="exampleSelect2">
-								<option>Harward</option>
-								<option>Software</option>
-								<option>otros</option>
-								
-							</select>
-							<small class="text-muted text text-info">Seleccione Categoria del Ticket.</small>
-						</fieldset>
-					</div>
-					<div class="col-lg-6">
-						<fieldset class="form-group">
-							<label class="form-label semibold" for="exampleInputEmail1">Titulo</label>
-							<input type="text" class="form-control" id="exampleInputEmail1" placeholder="Titulo del Ticket" >
-						</fieldset>
-					</div>
-					<div class="col-lg-12">
-						<fieldset class="form-group">
-							<label class="form-label semibold" for="exampleInputPassword1">Descripcion</label>
-							<div class="summernote-theme-1">
-								<textarea  id="tick_descrip" class="summernote" name="name"></textarea>
-							</div>
-						</fieldset>
-						<button type="button" class="btn btn-rounded btn-inline btn-success">Guardar</button>
-					</div>
-					
-				</div><!--.row-->
+						<form method="post" id="ticket_form">
 
+							<input type="hidden" name="usu_id" id="usu_id" value="<?php echo $_SESSION["usu_id"] ?>">
+							<div class="col-lg-6">
+								<fieldset class="form-group">
+									<label class="form-label semibold" for="exampleInput">Categoria</label>
+									<select class="form-control" id="cat_id" name="cat_id" >
+										<option value="">Seleccionar</option>
+									</select>
+								</fieldset>
+							</div>
+							<div class="col-lg-6">
+								<fieldset class="form-group">
+									<label class="form-label semibold" for="tick_titulo">Titulo</label>
+									<input type="text" class="form-control" id="tick_titulo" name="tick_titulo" placeholder="Ingrese Titulo">
+								</fieldset>
+							</div>
+							<div class="col-lg-12">
+								<fieldset class="form-group">
+									<label class="form-label semibold" for="tick_descrip">Descripcion</label>
+									<div class="summernote-theme-1">
+										<textarea class="summernote" name="tick_descrip" id="tick_descrip"></textarea>
+									</div>
+								</fieldset>
+							</div>
+							<div class="col-lg-12">
+								<button type="submit" name="action" value="add" class="btn btn-rounded btn-inline btn-success">Guardar</button>
+							</div>
+						</form>
+					</div><!--.row-->
 				</div>
+
+
 			</div>
 		</div>
 		<!-- Contenido -->
