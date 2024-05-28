@@ -34,7 +34,9 @@ class Ticket  extends Conectar{
                 tm_ticket.est = 1
                 AND tm_usuario.usu_id=?";
         $sql=$conectar->prepare($sql);
+        
         $sql->bindValue(1, $usu_id);
+        $sql->execute();
         return $resultado=$sql->fetchAll();
            
     }

@@ -1,4 +1,3 @@
-<!-- TODO conexion -->
 <?php 
     /* TODO iniciamos session para poder acceder a todos los datos */
     session_start();

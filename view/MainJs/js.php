@@ -6,7 +6,6 @@
 
 <script src="../../public/js/lib/datatables-net/datatables.min.js"></script>
 
-<script src="../../public/js/lib/bootstrap-sweetalert/sweetalert.min.js"></script>
 
 <script src="../../public/js/lib/summernote/summernote.min.js"></script>
 
@@ -15,5 +14,10 @@
 <script src="../../public/js/summernote-ES.js"></script>
 
 <script src="../../public/js/lib/select2/select2.full.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+<!-- TODO: Libreria Notify Bootstrap -->
+<script src="../../public/js/lib/bootstrap-notify/bootstrap-notify.min.js"></script>
+
+<script type="text/javascript" src="../../public/js/lib/blockUI/jquery.blockUI.js"></script>
+
+<!-- TODO: Liberia SweetAlert -->
+<script src="../../public/js/lib/bootstrap-sweetalert/sweetalert.min.js"></script>
