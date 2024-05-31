@@ -57,14 +57,14 @@ if (isset($_SESSION["usu_id"])) {
 							<div class="col-lg-6">
 								<fieldset class="form-group">
 									<label class="form-label semibold" for="tick_titulo">Titulo</label>
-									<input type="text" class="form-control" id="tick_titulo" name="tick_titulo" placeholder="Ingrese Titulo">
+									<input type="text" class="form-control" id="tick_titulo" name="tick_titulo" placeholder="Ingrese Titulo" required>
 								</fieldset>
 							</div>
 							<div class="col-lg-12">
 								<fieldset class="form-group">
 									<label class="form-label semibold" for="tick_descrip">Descripcion</label>
 									<div class="summernote-theme-1">
-										<textarea class="summernote" name="tick_descrip" id="tick_descrip"></textarea>
+										<textarea class="summernote" name="tick_descrip" id="tick_descrip" required></textarea>
 									</div>
 								</fieldset>
 							</div>

@@ -9,6 +9,9 @@
         case "insert":
             $ticket->insert_ticket($_POST["usu_id"],$_POST["cat_id"],$_POST["tick_titulo"],$_POST["tick_descrip"]);
         break;
+
+
+        
         case "listar":
             $datos=$ticket->listar_ticket_x_usu($_POST["usu_id"]);
             $data= Array();
@@ -17,6 +20,7 @@
                 $sub_array[]= $row["tick_id"];
                 $sub_array[]= $row["cat_nom"];
                 $sub_array[]= $row["tick_titulo"];
+                $sub_array[]= date('d-m-yy',strtotime($row["fech_crea"]));
                 $sub_array[]= '<button type="button" onClick="ver('.$row["tick_id"].');" id"'.$row["tick_id"].'" class="btn btn-outline-primary btn-icon"><div><i class="fa fa-edit"></i></div></button>';
                 $data[]= $sub_array;
             }

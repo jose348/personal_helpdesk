@@ -64,4 +64,8 @@ $(document).ready(function() {
 
 });
 
+function ver(tick_id) {
+    console.log(tick_id);
+
+}
 init();

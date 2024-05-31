@@ -47,6 +47,7 @@ if (isset($_SESSION["usu_id"])) {
 								<th>N° Ticket</th>
 								<th>Categoria</th>
 								<th>Titulo</th>
+								<th>Fecha De Crea</th>
 								<th></th>
 							</tr>
 						</thead>

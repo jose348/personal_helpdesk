@@ -18,8 +18,7 @@ if (isset($_POST["enviar"]) and $_POST["enviar"] == "si") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>sw</>
-    </title>
+    <title>sw</></title>
 
     <link href="img/favicon.144x144.png" rel="apple-touch-icon" type="image/png" sizes="144x144">
     <link href="img/favicon.114x114.png" rel="apple-touch-icon" type="image/png" sizes="114x114">
@@ -44,11 +43,13 @@ if (isset($_POST["enviar"]) and $_POST["enviar"] == "si") {
     <div class="page-center">
         <div class="page-center-in">
             <div class="container-fluid">
+                
                 <form class="sign-box" action="" method="POST" id="login-form">
+                <input type="hidden"id="rol_id" name="rol_id" value="1">
                     <div class="sign-avatar">
                         <img src="public/img/avatar-sign.png" alt="">
                     </div>
-                    <header class="sign-title">Mesa de Ayuda</header>
+                    <header class="sign-title" id="lbltitulo">Acceso Usuario</header>
 
                     <?php
                     if (isset($_GET["m"])) {
@@ -91,6 +92,12 @@ if (isset($_POST["enviar"]) and $_POST["enviar"] == "si") {
                         <div class="float-right reset">
                             <a href="reset-password.html">Cambiar Contraseña</a>
                         </div>
+
+
+                        <div class="float-left reset">
+                            <a href="#" id="btnsoporte">Acceso Soporte</a>
+                        </div>
+
                     </div>
                     <input type="hidden" name="enviar" class="form-control" value="si">
                     <button type="submit" class="btn btn-rounded">Ingresar</button>
@@ -128,6 +135,7 @@ if (isset($_POST["enviar"]) and $_POST["enviar"] == "si") {
         });
     </script>
     <script src="public/js/app.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>
