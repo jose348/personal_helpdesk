@@ -9,6 +9,12 @@
 <link href="img/favicon.png" rel="icon" type="image/png">
 <link href="img/favicon.ico" rel="shortcut icon">
 
+
+<!-- para mi informacion de mi ticket la vista de detalle Ticket -->
+<link rel="stylesheet" href="../../public/css/separate/vendor/fancybox.min.css">
+<link rel="stylesheet" href="../../public/css/separate/pages/activity.min.css">
+
+
 <link rel="stylesheet" href="../../public/css/separate/vendor/blockui.min.css">
 
 <link rel="stylesheet" href="../../public/css/separate/vendor/fancybox.min.css">

@@ -31,6 +31,14 @@
                     <span class="lbl">Inicio</span>
                 </a>
             </li>
+         
+
+            <li class="blue-dirty">
+                <a href="..\ConsultarTicket\">
+                    <span class="fa fa-eye"></span>
+                    <span class="lbl">Consultar Ticket</span>
+                </a>
+            </li>
         </ul>
     </nav>
 <?php } ?>

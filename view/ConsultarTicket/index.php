@@ -41,13 +41,14 @@ if (isset($_SESSION["usu_id"])) {
 
 				<div class="box-typical box-typical-padding" id="table">
 					<h5 class="m-t-lg with-border">Tickets Registrados</h5>
-					<table id="ticket_data" class="table table-bordered table-striped table-vcenter js-dataTable-full">
+					<table id="ticket_data" class="table table-bordered table-striped table-vcenter js-dataTable-full text text-center">
 						<thead>
-							<tr>
-								<th>N° Ticket</th>
-								<th>Categoria</th>
-								<th>Titulo</th>
-								<th>Fecha De Crea</th>
+							<tr class="">
+								<th class="text text-center" style="width: 10%; " >N° Ticket</th>
+								<th class="text text-center" style="width: 20%; ">Categoria</th>
+								<th class="text text-center" style="width: 20%; ">Titulo</th>
+								<th class="text text-center" style="width: 20%; ">Estado</th>
+								<th class="text text-center" style="width: 20%; ">Fecha De Crea</th>
 								<th></th>
 							</tr>
 						</thead>

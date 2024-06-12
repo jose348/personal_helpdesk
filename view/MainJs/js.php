@@ -21,3 +21,9 @@
 
 <!-- TODO: Liberia SweetAlert -->
 <script src="../../public/js/lib/bootstrap-sweetalert/sweetalert.min.js"></script>
+<!-- para detalle ticket -->
+<script src="../../public/js/lib/fancybox/jquery.fancybox.pack.js"></script>
+
+<!-- para poner en español el summernote -->
+<script src="../../public/js/summernote-es-ES.js"></script>
+

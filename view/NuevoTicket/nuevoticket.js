@@ -8,7 +8,19 @@ function init() {
 /* TODO CON ESTAS LINEA DE CODIGO ACTIVAMOS EL SUMMERNOTE DE NUESTRO TEMPLATE */
 $(document).ready(function() {
     $('#tick_descrip').summernote({
-        height: 200
+        height: 150,
+        lan: "es-ES",
+        callbacks: {
+            onImageUpload: function(image) {
+                console.log("Imagen Detected...");
+                myimagetreat(image[0]);
+
+            },
+            onPaste: function(e) {
+                console.log("Text Detected");
+            }
+
+        }
 
     });
     $.post("../../controller/categoria.php?op=combo", function(data, status) {
